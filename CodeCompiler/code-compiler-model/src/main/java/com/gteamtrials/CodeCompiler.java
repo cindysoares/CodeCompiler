@@ -10,6 +10,6 @@ import javax.jws.soap.SOAPBinding.Style;
 public interface CodeCompiler {
 	
 	@WebMethod
-	public String compileAndTest(String code);
+	public String compileAndRun(String code);
 
 }
