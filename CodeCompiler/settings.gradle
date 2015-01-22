@@ -1,1 +1,1 @@
-include 'code-compiler-server', 'code-compiler-client'
+include 'code-compiler-server-ws', 'code-compiler-client-ws'
