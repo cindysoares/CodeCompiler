@@ -1,7 +1,6 @@
 package com.gteamtrials.soap.service;
 
 import java.io.ByteArrayOutputStream;
-import java.io.IOException;
 import java.io.OutputStream;
 import java.io.PrintStream;
 import java.io.StringReader;
@@ -16,9 +15,7 @@ import org.apache.log4j.WriterAppender;
 import org.codehaus.commons.compiler.CompileException;
 import org.codehaus.janino.SimpleCompiler;
 
-import com.gteamtrials.CodeCompiler;
-
-@WebService
+@WebService(endpointInterface="com.gteamtrials.soap.service.CodeCompiler")
 public class CodeCompilerServiceImpl implements CodeCompiler {
 	
 	private static final Logger log = Logger.getLogger(CodeCompilerServiceImpl.class);
