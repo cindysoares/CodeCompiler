@@ -6,6 +6,8 @@ repositories {
     mavenCentral()
 }
 
+jar.enabled = false
+
 war {
 	archiveName project.name + ".war"
 	manifest {
