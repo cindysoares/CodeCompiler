@@ -1,3 +1,8 @@
+apply plugin: 'war'
+
+jar.enabled = false
+war.archiveName = project.name + ".war"
+
 version = '1.0'
 
 buildscript {
@@ -11,19 +16,17 @@ buildscript {
   }
 }
 
-apply plugin: 'war'
-apply plugin: 'com.github.jacobono.wsdl'
 
+apply plugin: 'com.github.jacobono.wsdl'
 
 repositories {
     mavenCentral()
 }
-jar.enabled = false
 
 war {
 	archiveName project.name + ".war"
-    manifest {
-        attributes 'Implementation-Title': 'Code Compiler Client WS', 'Implementation-Version': version
+	manifest {
+        attributes 'Implementation-Title': 'Code Compiler Server WS', 'Implementation-Version': version
     }
 }
 

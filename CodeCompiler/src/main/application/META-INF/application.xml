@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application version="5" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/application_5.xsd">
-  <display-name>MyEAR</display-name>
+  <display-name>CodeCompiler</display-name>
   <module>
     <web>
       <web-uri>code-compiler-client-ws.war</web-uri>
